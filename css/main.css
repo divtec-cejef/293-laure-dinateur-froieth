@@ -2,12 +2,21 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #011627;
+    text-align:center;
+}
+
+.titre {
+    color: #2ec4b6;
+}
+
 body {
     font-family: Arial, sans-serif;
+    color: #011627;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.4;
-    color: darkblue;
     background-color: whitesmoke;
 }
 
