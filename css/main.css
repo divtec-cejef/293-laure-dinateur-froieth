@@ -3,8 +3,10 @@
 }
 
 header {
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
     background-color: #011627;
-    text-align:center;
 }
 
 .titre {
@@ -18,20 +20,22 @@ body {
     font-size: 100%;
     line-height: 1.4;
     background-color: #fdfffc;
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Changa One, sans-serif;
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: Changa One, cursive;
 }
 
 h1 {
     font-size: 2rem;
-    margin: 0 0 1em;
+    margin-bottom: 1em;
 }
 
 h2 {
     font-size: 1.5rem;
-    margin: 0 0 0.75em;
+    margin-bottom: 0.75em;
 }
 
 p {
@@ -55,4 +59,28 @@ a:hover {
 
 ul {
     list-style-type: none;
+}
+
+.nom {
+    color: #2ec4b6;
+    font-size: 1.75rem;
+    line-height: 0.8;
+    margin: 1rem 0;
+}
+
+.metier {
+    margin-top: -5px;
+}
+
+header nav ul {
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.hide {
+    display: none;
 }
