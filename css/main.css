@@ -161,3 +161,6 @@ footer nav ul li img:hover {
     transform: rotate(-10deg);
 }
 
+main ul li {
+    list-style-image: url('../img/facebook.png') ;
+}
