@@ -1,3 +1,39 @@
+/* changa-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/changa-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +41,6 @@
 header {
     text-align: center;
     padding: 10px;
-    margin: 30px;
     background-color: #011627;
 }
 
@@ -22,6 +57,10 @@ body {
     background-color: #fdfffc;
     padding: 0;
     margin: 0;
+}
+
+main {
+    margin: auto 10px ;
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
@@ -57,6 +96,17 @@ a:hover {
     color: darkmagenta;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    font-family: Changa One, cursive;
+    color: white;
+    font-weight: 400;
+}
+
+header nav ul li a:hover {
+    color: #2ec4b6;
+}
+
 ul {
     list-style-type: none;
 }
@@ -83,4 +133,9 @@ header nav ul li {
 
 .hide {
     display: none;
+}
+
+footer {
+    text-align: center;
+    margin: 50px 0;
 }
