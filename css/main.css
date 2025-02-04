@@ -38,33 +38,23 @@
     box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    padding: 10px;
-    background-color: #011627;
-}
-
-.titre {
-    color: #2ec4b6;
-}
-
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #011627;
-    font-weight: 400;
-    font-size: 100%;
-    line-height: 1.4;
     background-color: #fdfffc;
+    color: #011627;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     padding: 0;
     margin: 0;
 }
 
-main {
-    margin: auto 20px ;
-}
-
-h1, h2, h3, h4, h5, h6, .logo {
-    font-family: Changa One, cursive;
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Changa One", cursive;
+    font-weight: 400;
 }
 
 h1 {
@@ -74,55 +64,45 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.75em;
+    margin-bottom: .75em;
 }
 
 p {
     line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
 a {
-    color: #e71d36;
+    color: #e71d36 ;
     text-decoration: none;
 }
 
-a:hover {
-    color: darkmagenta;
+/* Header */
+header {
+    background-color: #011627;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    font-family: Changa One, cursive;
-    color: white;
-    font-weight: 400;
+header .logo {
+    text-align: center;
 }
 
-header nav ul li a:hover {
-    color: #2ec4b6;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.nom {
+header .nom {
     color: #2ec4b6;
     font-size: 1.75rem;
-    line-height: 0.8;
-    margin: 1rem 0;
 }
 
-.metier {
+header .metier {
     margin-top: -5px;
 }
 
+/* Menu navigation */
+header nav {
+    text-align: center;
+}
+
 header nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
@@ -131,22 +111,41 @@ header nav ul li {
     margin: 0 1em;
 }
 
-.hide {
+header nav ul .hide {
     display: none;
 }
 
+header nav ul li a {
+    color: #fdfffc;
+    font-weight: 800;
+}
+
+/* Liens survolés et actifs en bleu */
+header nav ul li a:hover,
+header nav ul li.actif a
+{
+    color: #2ec4b6;
+}
+
+/* Contenu principal */
+main {
+    padding: 0 5%; /* 5% à gauche et à droite */
+}
+
+/* Pied de page du site */
 footer {
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0; /* 50px en haut et en bas */
 }
 
 footer nav ul {
-    padding: 0;
+    list-style-type: none; /* On enlève les puces */
+    padding: 0; /* On enlève les marges intérieures */
 }
 
 footer nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 footer nav ul li img{
@@ -161,6 +160,34 @@ footer nav ul li img:hover {
     transform: rotate(-10deg);
 }
 
-main ul li {
-    list-style-image: url('../img/facebook.png') ;
+/* Page contact */
+.page-contact ul.contacts {
+    list-style-type: none;
+}
+
+.page-contact ul.contacts li {
+    margin-bottom: .5em;
+}
+
+.page-contact ul.contacts a {
+    padding-left: 30px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* largeur hauteur */
+    background-position: 0 2px; /* position horizontale verticale */
+}
+
+/* Lien qui commence par "mailto" */
+.page-contact ul.contacts a[href^="mailto"] {
+    background-image: url("../img/mail.png");
+}
+
+/* Lien qui contient "twitter" */
+.page-contact ul.contacts a[href*="twitter"] {
+    background-image: url("../img/twitter.png");
+}
+
+/* Lien qui contient "facebook" */
+.page-contact ul.contacts a[href*="facebook"] {
+    background-image: url("../img/facebook.png");
 }
