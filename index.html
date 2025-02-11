@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Jeu de caractères utilisé pour l'encodage du fichier HTML -->
-    <meta charset="UTF-8">
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titre de la page -->
-    <title>Me contacter | Laure Dinateur - Graphiste</title>
+    <!-- Encodage des caractères de la page -->
+    <meta charset="utf-8">
+    <!-- Ajuste la taille de la page aux différents appareils : pc, mobiles, tablettes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Titre de la page. Visible dans l'onglet du navigateur -->
+    <title>Laure Dinateur - Graphiste</title>
     <!-- Auteur -->
     <meta name="author" content="Laure Dinateur">
-    <!-- Description de la page -->
-    <meta name="description" content="Brève description du contenu de la page.">
-    <!-- Reset CSS Normalize CSS -->
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <!-- CSS de base -->
-    <link rel="stylesheet" href="css/main.css"/>
-    <!-- Favicon -->
-    <link rel="icon" sizes="180x180" href="./favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Icône de base du site : FAVICON -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="page-accueil">
 <header>
-    <a href="#" class="logo">Logo du site</a>
-
+    <a href="index.html" class="logo">
+        <div class="nom">Laure Dinateur</div>
+        <div class="metier">Graphiste</div>
+    </a>
     <nav>
-        <ul class="menu">
-            <li>
-                <a href="#">Lien #1</a>
-            </li>
-            <li>
-                <a href="#">Lien #2</a>
-            </li>
-            <li>
-                <a href="#">Lien #3</a>
-            </li>
+        <ul>
+            <li class="hide actif"><a href="index.html">Accueil</a></li>
+            <li><a href="">Qui suis-je ?</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <h1>Titre principal de la page</h1>
-    <p>Un paragraphe pas trop long à lire</p>
+    <h1>Mes réalisations</h1>
+
+    <ul>
+        <li><a href="">
+            <figure><img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </a></li>
+    </ul>
+
 </main>
 <footer>
-    &copy;2021 Laure Dinateur
+    <nav>
+        <ul>
+            <li>
+                <a href="https://twitter.com/lauredi" target="_blank">
+                    <img src="img/twitter-draw.png" alt="Ouvrir mon Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/laure.dinateur" target="_blank">
+                    <img src="img/facebook-draw.png" alt="Ouvrir mon Facebook">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div>&copy;2025 Laure Dinateur</div>
 </footer>
 </body>
 </html>
