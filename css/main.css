@@ -49,6 +49,11 @@ body {
     margin: 0;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -190,4 +195,21 @@ footer nav ul li img:hover {
 /* Lien qui contient "facebook" */
 .page-contact ul.contacts a[href*="facebook"] {
     background-image: url("../img/facebook.png");
+}
+
+/* Page Accueil */
+.page-accueil .realisations {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap;
+}
+
+.page-accueil .realisations li {
+    width: 50%;
+}
+
+.page-accueil .realisations figure {
+    margin: 0;
 }
