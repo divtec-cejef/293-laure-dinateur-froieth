@@ -207,7 +207,9 @@ footer nav ul li img:hover {
 }
 
 .page-accueil .realisations li {
-    width: 50%;
+    flex-basis: calc(100% / 2);
+    flex-grow: 2;
+    padding: 10px;
 }
 
 .page-accueil .realisations figure {
