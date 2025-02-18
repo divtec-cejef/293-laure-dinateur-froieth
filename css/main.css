@@ -215,3 +215,28 @@ footer nav ul li img:hover {
 .page-accueil .realisations figure {
     margin: 0;
 }
+
+/*******************************************************************/
+/* MEDIA QUERIES */
+
+/* Pour les écrans >= 480px */
+@media screen and (min-width: 480px) {
+    .page-accueil .realisations li {
+        flex-basis: calc(100% / 3);
+        flex-grow: 3;
+    }
+}
+
+/* Pour les écrans >= 660px */
+/*@media screen and (min-width: 660px) {
+    main {
+        background-color: green;
+    }
+}*/
+
+/* Pour les écrans >= 910px */
+/*@media screen and (min-width: 910px) {
+    main {
+        background-color: blue;
+    }
+}*/
